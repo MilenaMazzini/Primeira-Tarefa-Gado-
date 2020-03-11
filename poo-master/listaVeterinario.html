@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cadastro Veterinário</title>
+    <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <script
+   			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+   			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+   			  crossorigin="anonymous"></script>
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <link rel="stylesheet" href="css/estilo.css">
+  </head>
+  <body class="container">
+
+      <nav>
+        <div class="row" style="background-color: #26a69a;">
+          <div class="col s12 l12 m12 ">
+            <ul>
+              <li class="nav"><a href="veterinario.php" class="nav" class="nav">Veterinario</a></li>
+              <li class="nav"><a href="listaVeterinario.php" class="nav" class="nav">Listagem</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+    <div class="row">
+      <div class="col s12 l12 m12 ">
+        <h1>Listagem de Veterinários</h1>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s12 l12 m12 ">
+        <table>
+          <tr>
+            <thead>
+              <th>ID</th>
+              <th>Nome</th>
+              <th>CRMV</th>
+              <th>Telefone</th>
+              <th>Informações</th>
+              <th><img src="img/editar.png" style="width: 25px;"></th>
+              <th><img src="img/excluir.png" style="width: 25px;"></th>
+              <th><img src="img/perfil.png" style="width: 25px; "></th>
+            </thead>
+            </tr>
+          <tbody>
+            {itens}
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </body>
+</html>
